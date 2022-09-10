@@ -13,7 +13,7 @@ Connect the reMarkable via USB and make sure it has internet access.
 Connect to the reMarkable with [SSH](https://remarkablewiki.com/tech/ssh) and execute
 
 ``` bash
-wget -O - http://raw.githubusercontent.com/Evidlo/remarkable_entware/master/install.sh | sh
+wget -O - http://raw.githubusercontent.com/operatornull/remarkable_entware/master/install.sh | sh
 ```
 
 All entware data is located in `/opt` (which actually points to `/home/root/.entware` because of size constraints on the root partition).  Base installation is ~13MB.
@@ -30,7 +30,7 @@ opkg find '*top*'    # search package names and descriptions
 reMarkable updates wipe out everything outside of `/home/root`.  While Entware remains intact in `/home/root/.entware`, the mount over `/opt` has to be recreated with `entware_reenable.sh`.
 
 ``` bash
-wget -O - http://raw.githubusercontent.com/Evidlo/remarkable_entware/master/reenable.sh | sh
+wget -O - http://raw.githubusercontent.com/operatornull/remarkable_entware/master/reenable.sh | sh
 ```
 
 ### No space left on device
